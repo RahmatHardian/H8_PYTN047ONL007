@@ -8,10 +8,12 @@
 </head>
 <body>
     <form action="{{ url_for('predict') }}" method="post">
-        <input type="text" name="ssc" placeholder="Secondary Education" required="required" />
-        <input type="text" name="hsc" placeholder="Highschool" required="required" />
+        <input type="text" name="ssc" placeholder="Title and or description" required="required" />
+        
+        
+        <!-- <input type="text" name="hsc" placeholder="Highschool" required="required" />
         <input type="text" name="degree" placeholder="Degree" required="required" />
-        <input type="text" name="etest" placeholder="Interview Score" required="required" />
+        <input type="text" name="etest" placeholder="Interview Score" required="required" /> -->
         
         <button type="submit">Predict</button>
         <p>{{ prediction_text }}</p>
